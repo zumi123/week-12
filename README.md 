@@ -1,0 +1,58 @@
+# Week 12 — Knowledge Gap Formulation for Compounding
+
+**Trainee:** Zemzem Hibet  
+**Program:** The Residency Program (TRP1)  
+**Week:** 12 — Daily Paired Gap Research
+
+## Overview
+
+Week 12 closes the knowledge gaps behind the systems built in Weeks 10 and 11. Each day I am paired with a colleague. We each identify a genuine gap in our understanding of AI engineering, sharpen each other's questions, research and write explainers for each other's gaps, and publish publicly.
+
+By Day 5: 10 gaps closed, 5 blog posts, 5 tweet threads, 5 grounding commits back into prior portfolio work.
+
+---
+
+## Portfolio Context
+
+- **Week 10:** Automated Lead Generation and Conversion System for Tenacious Consulting and Outsourcing
+- **Week 11:** Building the AI Sales Agent Evaluation Bench and Aligning the Conversion Engine
+
+---
+
+## Daily Pairs
+
+| Day | Topic | My Question | Partner |
+|-----|-------|-------------|---------|
+| 1 | Inference-Time Mechanics — KV Cache | What is physically stored in the KV cache per token per layer, and why is recomputation expensive enough to make caching worthwhile? | [Partner Name] |
+| 2 | TBD | TBD | TBD |
+| 3 | TBD | TBD | TBD |
+| 4 | TBD | TBD | TBD |
+| 5 | TBD | TBD | TBD |
+
+---
+
+## Public Artifacts
+
+### Blog Posts
+1. Day 1 — [Title] — [URL — to be added]
+2. Day 2 — [Title] — [URL]
+3. Day 3 — [Title] — [URL]
+4. Day 4 — [Title] — [URL]
+5. Day 5 — [Title] — [URL]
+
+### Tweet Threads
+1. Day 1 — [URL — to be added]
+2. Day 2 — [URL]
+3. Day 3 — [URL]
+4. Day 4 — [URL]
+5. Day 5 — [URL]
+
+---
+
+## Final Deliverables (Saturday 21hr UTC)
+
+- [ ] Five `pair_DAY_N` folders complete
+- [ ] `synthesis.md` — 1,500-word week synthesis
+- [ ] `canonical_list.md` — annotated reading list
+- [ ] `portfolio_update.md` — one-page summary for FDE hiring manager
+- [ ] All public artifact URLs in this README
