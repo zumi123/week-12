@@ -23,7 +23,7 @@ By Day 5: 10 gaps closed, 5 blog posts, 5 tweet threads, 5 grounding commits bac
 
 | Day | Topic | My Question | Partner |
 |-----|-------|-------------|---------|
-| 1 | Inference-Time Mechanics — KV Cache | What is physically stored in the KV cache per token per layer, and why is recomputation expensive enough to make caching worthwhile? | [Partner Name] |
+| 1 | Inference-Time Mechanics — KV Cache | What is physically stored in the KV cache per token per layer, and why is recomputation expensive enough to make caching worthwhile? | Rahel Samson |
 | 2 | TBD | TBD | TBD |
 | 3 | TBD | TBD | TBD |
 | 4 | TBD | TBD | TBD |
