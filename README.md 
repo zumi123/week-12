@@ -24,8 +24,8 @@ By Day 5: 10 gaps closed, 5 blog posts, 5 tweet threads, 5 grounding commits bac
 | Day | Topic | My Question | Partner |
 |-----|-------|-------------|---------|
 | 1 | Inference-Time Mechanics — KV Cache | What is physically stored in the KV cache per token per layer, and why is recomputation expensive enough to make caching worthwhile? | Rahel Samson |
-| 2 | TBD | TBD | TBD |
-| 3 | Training and post-training mechanics. | TBD | TBD |
+| 2 | Agent and tool-use internals | Why does my Week 10 agent loop for 682 seconds — what breaks at the token level when a model fails to complete a tool call? | Efrata Wolde |
+| 3 | Training and post-training mechanics. | Why does SimPO move faster than DPO on small datasets — what does removing the reference model actually do to the gradient? | Abdulaziz Mohammed |
 | 4 | TBD | TBD | TBD |
 | 5 | TBD | TBD | TBD |
 
