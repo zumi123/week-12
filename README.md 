@@ -25,7 +25,7 @@ By Day 5: 10 gaps closed, 5 blog posts, 5 tweet threads, 5 grounding commits bac
 |-----|-------|-------------|---------|
 | 1 | Inference-Time Mechanics — KV Cache | What is physically stored in the KV cache per token per layer, and why is recomputation expensive enough to make caching worthwhile? | Rahel Samson |
 | 2 | TBD | TBD | TBD |
-| 3 | TBD | TBD | TBD |
+| 3 | Training and post-training mechanics. | TBD | TBD |
 | 4 | TBD | TBD | TBD |
 | 5 | TBD | TBD | TBD |
 
@@ -34,15 +34,15 @@ By Day 5: 10 gaps closed, 5 blog posts, 5 tweet threads, 5 grounding commits bac
 ## Public Artifacts
 
 ### Blog Posts
-1. Day 1 — [Title] — [URL — to be added]
-2. Day 2 — [Title] — [URL]
-3. Day 3 — [Title] — [URL]
+1. Day 1 — Does Your Judge Score Quality or Just Length? Detecting Verbosity Bias in LLM-as-a-Judge — https://www.linkedin.com/pulse/does-your-judge-score-quality-just-length-detecting-verbosity-hibet-xihje
+2. Day 2 — What Actually Happens When an LLM Decides to Call a Tool — https://www.linkedin.com/pulse/what-actually-happens-when-llm-decides-call-tool-zemzem-hibet-7p1le
+3. Day 3 — Diagnosing Reward Overoptimization in LoRA Preference Training — https://www.linkedin.com/pulse/you-actually-aligning-your-judge-just-overfitting-zemzem-hibet-7xdle
 4. Day 4 — [Title] — [URL]
 5. Day 5 — [Title] — [URL]
 
 ### Tweet Threads
-1. Day 1 — [URL — to be added]
-2. Day 2 — [URL]
+1. Day 1 — https://www.linkedin.com/posts/zemzem-hibet_you-built-an-llm-judge-to-evaluate-ai-generated-activity-7457908893768208384-6NfC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoQ5tYBk-I7qgTdzeo9LHdyyk2Fl0QNAIM
+2. Day 2 — https://www.linkedin.com/posts/zemzem-hibet_aiagents-llm-aiengineering-ugcPost-7458073747909050368-WHUP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoQ5tYBk-I7qgTdzeo9LHdyyk2Fl0QNAIM
 3. Day 3 — [URL]
 4. Day 4 — [URL]
 5. Day 5 — [URL]
