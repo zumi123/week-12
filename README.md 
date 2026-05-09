@@ -1,58 +1,85 @@
 # Week 12 — Knowledge Gap Formulation for Compounding
 
-**Trainee:** Zemzem Hibet  
-**Program:** The Residency Program (TRP1)  
-**Week:** 12 — Daily Paired Gap Research
-
-## Overview
-
-Week 12 closes the knowledge gaps behind the systems built in Weeks 10 and 11. Each day I am paired with a colleague. We each identify a genuine gap in our understanding of AI engineering, sharpen each other's questions, research and write explainers for each other's gaps, and publish publicly.
-
-By Day 5: 10 gaps closed, 5 blog posts, 5 tweet threads, 5 grounding commits back into prior portfolio work.
+**Name:** Zemzem Hibet
+**Program:** The Tenacious Recruitment Program (TRP)
+**Week:** 12 of 12
+**Focus:** Inference-time mechanics, Agent and tool-use internals, Training and post-training mechanics, Evaluation and statistics
 
 ---
 
-## Portfolio Context
+## What This Week Is
+
+Weeks 0–11 were about building systems. Week 12 is about understanding them deeply enough to teach them.
+
+Each day I was paired with a colleague. We each identified a genuine gap in our understanding of the day's AI engineering topic — grounded in our own Week 10 and 11 portfolio work. We sharpened each other's questions on a morning call, spent the day researching our partner's question, wrote a blog post and LinkedIn post explaining it, then critiqued each other's work on an evening call.
+
+Result: 8 gaps closed, 4 blog posts, 3 LinkedIn posts, 4 concrete edits to prior portfolio work.
+
+---
+
+## Daily Pairs
+
+| Day | Topic | My Question | Partner's Question |
+|-----|-------|-------------|-------------------|
+| 1 | Inference-time mechanics | KV cache stores keys and values at every transformer layer — why does byte-identical prefix identity matter and what does recomputation actually cost? | How to detect and quantify length bias in Qwen3-Next-80B given chosen emails averaging 108 words and rejected averaging 231 words |
+| 2 | Agent and tool-use internals | Why does my Week 10 agent loop for 682 seconds — what breaks at the token level when a model fails to complete a tool call? | What happens at the token level when a model decides to call a tool vs respond in plain text |
+| 3 | Training and post-training mechanics | Why does SimPO move faster than DPO on small datasets — what does removing the reference model actually do to the gradient? | How to diagnose whether LoRA preference training is learning stable behavior versus exploiting shortcuts in the judge rubric |
+| 4 | Evaluation and statistics | My benchmark passes three contamination checks but I cannot explain why they don't prove the base model didn't see my tasks during pre-training | Whether a 3-failure to 0-failure improvement on 89 examples is statistically meaningful or sampling noise |
+
+---
+
+## Public Artifacts
+
+### Blog Posts (LinkedIn Articles)
+| Day | Title | Link |
+|-----|-------|------|
+| 1 | Does Your Judge Score Quality or Just Length? | https://www.linkedin.com/pulse/does-your-judge-score-quality-just-length-detecting-verbosity-hibet-xihje |
+| 2 | What Actually Happens When an LLM Decides to Call a Tool | https://www.linkedin.com/pulse/what-actually-happens-when-llm-decides-call-tool-zemzem-hibet-7p1le |
+| 3 | Are You Actually Aligning Your Judge, or Just Overfitting to It? | https://www.linkedin.com/pulse/you-actually-aligning-your-judge-just-overfitting-zemzem-hibet-7xdle |
+| 4 | Is Your Eval Defensible? Statistical Significance for Small Binary-Outcome Benchmarks | https://www.linkedin.com/pulse/your-eval-defensible-statistical-significance-small-benchmarks-hibet-lkfee |
+
+### LinkedIn Posts
+| Day | Link |
+|-----|------|
+| 1 | https://www.linkedin.com/posts/zemzem-hibet_you-built-an-llm-judge-to-evaluate-ai-generated-activity-7457908893768208384-6NfC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoQ5tYBk-I7qgTdzeo9LHdyyk2Fl0QNAIM |
+| 2 | https://www.linkedin.com/posts/zemzem-hibet_aiagents-llm-aiengineering-ugcPost-7458073747909050368-WHUP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoQ5tYBk-I7qgTdzeo9LHdyyk2Fl0QNAIM |
+| 3 | https://www.linkedin.com/posts/zemzem-hibet_aiengineering-machinelearning-llmeval-ugcPost-7458936003492245504-fiCL?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoQ5tYBk-I7qgTdzeo9LHdyyk2Fl0QNAIM |
+
+---
+
+## Portfolio Work
 
 - **Week 10:** Automated Lead Generation and Conversion System for Tenacious Consulting and Outsourcing
 - **Week 11:** Building the AI Sales Agent Evaluation Bench and Aligning the Conversion Engine
 
 ---
 
-## Daily Pairs
+## Repo Structure
 
-| Day | Topic | My Question | Partner |
-|-----|-------|-------------|---------|
-| 1 | Inference-Time Mechanics — KV Cache | What is physically stored in the KV cache per token per layer, and why is recomputation expensive enough to make caching worthwhile? | Rahel Samson |
-| 2 | Agent and tool-use internals | Why does my Week 10 agent loop for 682 seconds — what breaks at the token level when a model fails to complete a tool call? | Efrata Wolde |
-| 3 | Training and post-training mechanics. | Why does SimPO move faster than DPO on small datasets — what does removing the reference model actually do to the gradient? | Abdulaziz Mohammed |
-| 4 | TBD | TBD | TBD |
-| 5 | TBD | TBD | TBD |
-
----
-
-## Public Artifacts
-
-### Blog Posts
-1. Day 1 — Does Your Judge Score Quality or Just Length? Detecting Verbosity Bias in LLM-as-a-Judge — https://www.linkedin.com/pulse/does-your-judge-score-quality-just-length-detecting-verbosity-hibet-xihje
-2. Day 2 — What Actually Happens When an LLM Decides to Call a Tool — https://www.linkedin.com/pulse/what-actually-happens-when-llm-decides-call-tool-zemzem-hibet-7p1le
-3. Day 3 — Diagnosing Reward Overoptimization in LoRA Preference Training — https://www.linkedin.com/pulse/you-actually-aligning-your-judge-just-overfitting-zemzem-hibet-7xdle
-4. Day 4 — [Title] — [URL]
-5. Day 5 — [Title] — [URL]
-
-### Tweet Threads
-1. Day 1 — https://www.linkedin.com/posts/zemzem-hibet_you-built-an-llm-judge-to-evaluate-ai-generated-activity-7457908893768208384-6NfC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoQ5tYBk-I7qgTdzeo9LHdyyk2Fl0QNAIM
-2. Day 2 — https://www.linkedin.com/posts/zemzem-hibet_aiagents-llm-aiengineering-ugcPost-7458073747909050368-WHUP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoQ5tYBk-I7qgTdzeo9LHdyyk2Fl0QNAIM
-3. Day 3 — [URL]
-4. Day 4 — [URL]
-5. Day 5 — [URL]
+```
+week-12/
+├── README.md
+├── pair_DAY_1/
+│   ├── question.md
+│   ├── morning_call_summary.md
+│   ├── explainer.md
+│   ├── thread.md
+│   ├── evening_call_summary.md
+│   ├── signoff.md
+│   ├── grounding_commit.md
+│   └── sources.md
+├── pair_DAY_2/  (same structure)
+├── pair_DAY_3/  (same structure)
+├── pair_DAY_4/  (same structure)
+├── synthesis.md
+├── canonical_list.md
+└── portfolio_update.md
+```
 
 ---
 
-## Final Deliverables (Saturday 21hr UTC)
+## Final Submission Files
 
-- [ ] Five `pair_DAY_N` folders complete
-- [ ] `synthesis.md` — 1,500-word week synthesis
-- [ ] `canonical_list.md` — annotated reading list
-- [ ] `portfolio_update.md` — one-page summary for FDE hiring manager
-- [ ] All public artifact URLs in this README
+- [`synthesis.md`](./synthesis.md) — 8 gaps closed, most surprising learning, canonical reading list
+- [`canonical_list.md`](./canonical_list.md) — annotated papers, tools, and patterns for FDEs
+- [`portfolio_update.md`](./portfolio_update.md) — how the 4 grounding commits improve Weeks 10–11, written for the program manager
